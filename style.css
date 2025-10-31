@@ -1,0 +1,80 @@
+.btn-custum {
+    font-size: 10px;
+}
+/* @media(min-width: 768px ) {
+    .new-input {
+        width: 50%;
+    }
+} */
+/* کانتینر اصلی */
+.fade-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+/* موقعیت‌دهی هر دو تصویر روی هم */
+.fade-container img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fade-container .fade-css {
+    opacity: 0;
+    animation: fadeCycle-css 8s infinite ease-in-out;
+}
+
+.fade-container .fade-html {
+    opacity: 0;
+    animation: fadeCycle-html 8s infinite ease-in-out;
+}
+
+
+
+@keyframes fadeCycle-css {
+
+    0%,
+    10% {
+        opacity: 0;
+    }
+
+    /* کاملاً مشخص */
+    40%,
+    50% {
+        opacity: 1;
+    }
+
+    /* آرام محو می‌شود */
+    90%,
+    100% {
+        opacity: 0;
+    }
+
+    /* دوباره کامل نمایش */
+}
+
+@keyframes fadeCycle-html {
+
+    0%,
+    10% {
+        opacity: 1;
+    }
+
+    /* کاملاً مشخص */
+    40%,
+    50% {
+        opacity: 0;
+    }
+
+    /* آرام محو می‌شود */
+    90%,
+    100% {
+        opacity: 1;
+    }
+
+    /* دوباره کامل نمایش */
+}
